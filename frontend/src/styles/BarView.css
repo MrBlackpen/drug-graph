@@ -1,0 +1,8 @@
+/* frontend/src/styles/BarView.css */
+/* Recharts uses inline SVG – container styling only */
+
+.chart-container {
+    width: 100%;
+    height: 350px;
+  }
+  

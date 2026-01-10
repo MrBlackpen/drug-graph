@@ -1,0 +1,9 @@
+/* frontend/src/styles/KPIView.css */
+
+.kpi-value {
+    font-size: 56px;
+    font-weight: 800;
+    text-align: center;
+    color: #22c55e;
+  }
+  

@@ -1,0 +1,141 @@
+/* frontend/src/styles/VisualizationPanel.css */
+
+.viz-panel {
+    height: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    background: #0a0a0a;
+    color: #e5e5e5;
+  }
+  
+  .viz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .viz-title {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #71717a;
+    font-weight: 700;
+  }
+  
+  .viz-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    background: #09090b;
+    border: 1px solid #27272a;
+    border-radius: 8px;
+  }
+  
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3f3f46;
+  }
+  
+  .status-dot.active {
+    background: #22c55e;
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.7);
+  }
+  
+  .status-text {
+    font-size: 10px;
+    font-family: monospace;
+    color: #a1a1aa;
+  }
+  
+  .viz-body {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .viz-empty {
+    text-align: center;
+    opacity: 0.4;
+  }
+  
+  .viz-logo {
+    font-size: 96px;
+    font-weight: 900;
+    letter-spacing: -6px;
+  }
+  
+  .viz-line {
+    width: 48px;
+    height: 4px;
+    background: #2563eb;
+    margin: 16px auto;
+  }
+  
+  .viz-content {
+    width: 100%;
+    animation: fadeIn 0.7s ease-in-out;
+  }
+  
+  .viz-footer {
+    margin-top: auto;
+    padding-top: 24px;
+  }
+  
+  .viz-toggle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: none;
+    border: none;
+    color: #a1a1aa;
+    cursor: pointer;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .viz-toggle:hover {
+    color: white;
+  }
+  
+  .toggle-switch {
+    width: 40px;
+    height: 20px;
+    border-radius: 999px;
+    background: #27272a;
+    border: 1px solid #3f3f46;
+    position: relative;
+    transition: background 0.3s;
+  }
+  
+  .toggle-switch.on {
+    background: #2563eb;
+    border-color: #3b82f6;
+  }
+  
+  .toggle-thumb {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-switch.on .toggle-thumb {
+    transform: translateX(18px);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  

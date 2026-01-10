@@ -1,0 +1,56 @@
+/* frontend/src/styles/GraphView.css */
+
+.graph-container {
+    position: relative;
+    height: 400px;
+    background: #09090b;
+    border: 1px solid #27272a;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .graph-empty {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #71717a;
+    font-size: 14px;
+  }
+  
+  .graph-legend {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background: rgba(24, 24, 27, 0.9);
+    backdrop-filter: blur(6px);
+    border: 1px solid #27272a;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 12px;
+  }
+  
+  .legend-title {
+    font-weight: 700;
+    color: #a1a1aa;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  
+  .legend-text {
+    color: #e5e7eb;
+  }
+  

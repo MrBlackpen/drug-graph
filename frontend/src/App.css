@@ -1,0 +1,66 @@
+/* App.css */
+:root {
+  --bg-dark: #09090b;
+  --card-bg: #111113;
+  --border-color: #27272a;
+  --accent-blue: #3b82f6;
+  --text-main: #fafafa;
+  --text-muted: #71717a;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  overflow: hidden;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.header {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  border-bottom: 1px solid var(--border-color);
+  background: rgba(9, 9, 11, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  padding: 24px;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.dashboard-card {
+  display: flex;
+  flex: 1;
+  background-color: var(--card-bg);
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+}
+
+.panel-viz {
+  width: 50%;
+  border-right: 1px solid var(--border-color);
+  background: linear-gradient(180deg, #111113 0%, #0c0c0e 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-chat {
+  display: flex;
+  flex-direction: column;
+  background-color: #111113;
+}
+
+.half-width { width: 50%; }
+.full-width { width: 100% !important; }
